@@ -642,7 +642,7 @@ pre code {
 
 .col-md-6{
   position: relative;
-  /* width: 100%; */
+  width: 100%;
   padding-right: 50px;
   padding-left: 70px;
 }
