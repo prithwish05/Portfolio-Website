@@ -727,7 +727,7 @@
 
 .theme-red .timeline li:first-child .tree {
   background-color: #EF3724;
-  display: inline;
+/*   display: inline; */
 }
 
 .timeline li .tree {
