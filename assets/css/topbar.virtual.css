@@ -99,7 +99,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -138,20 +138,47 @@
   z-index: 10;
 }
 
+.page-about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.456);
+  z-index: -1;
+}
 
 .page-about {
-  background-image: url(../assets/img/bg_banner.jpg);
-  /* background-color: #fff; */
+  background-image: url(/Users/91743/Downloads/pexels-padrinan-19670.jpg);
+  /* background-image: url(/Users/91743/OneDrive/Desktop/PORTFOLIO/main/Prithwish/prithwish/assets/img/logo/background.jpg); */
+  
+}
+
+.page-portfolio {
+  background-image: url(/Users/91743/Downloads/pexels-padrinan-19670.jpg);
+  /* background-image: url(/Users/91743/OneDrive/Desktop/PORTFOLIO/main/Prithwish/prithwish/assets/img/logo/background.jpg); */
+}
+
+.page-portfolio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.456);
+  z-index: -1;
 }
 
 .page-about .img-place {
   width: 280px;
   height: 350px;
-  background-color: #dfe0e6;
+  /* background-color: #dfe0e6; */
   overflow: unset;
 }
 
-.page-about .img-place::before {
+/* .page-about .img-place::before {
   content: "";
   position: absolute;
   top: -20px;
@@ -160,7 +187,7 @@
   height: 100%;
   border: 5px solid #747474;
   z-index: -1;
-}
+} */
 
 .timeline {
   position: relative;
@@ -176,10 +203,10 @@
   top: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
+  margin: inherit;
   width: 2px;
   height: 95%;
-  background-color: #e3e5e9;
+  background-color: #000000;
 }
 
 .timeline li {
@@ -505,23 +532,24 @@
 
 .theme-red .filterable-button .btn.selected,
 .theme-red .filterable-button .btn:focus {
-  background-color: #EF3724;
+  background-color: #03c9ff;
   color: #fff;
-  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #EF3724;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #000000;
 }
 
 .theme-red .page-about .img-place::before {
-  border-color: #EF3724;
+  /* border-color: #EF3724; */
+  border-color: #0026ff;
 }
 
 .theme-red .timeline li:first-child .title {
-  background-color: #EF3724;
+  background-color: #0026ff;
   /* display: inline; */
 }
 
 .theme-red .timeline li:first-child::before {
-  background-color: #EF3724;
-  box-shadow: 0 0 0 2px #EF3724;
+  background-color: #0026ff;
+  box-shadow: 0 0 0 2px #000000;
 }
 
 /* Theme Blue */
@@ -726,8 +754,8 @@
 }
 
 .theme-red .timeline li:first-child .tree {
-  background-color: #EF3724;
-/*   display: inline; */
+  background-color: #0026ff;
+  /* display: inline; */
 }
 
 .timeline li .tree {
