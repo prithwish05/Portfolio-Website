@@ -242,7 +242,7 @@ a:hover, a:active {
     text-align: center;
     font-size: 18px;
     border-radius: 50%;
-    background-color: #52565c;
+    background-color: #343a4096;
     color: #fff;
     visibility: hidden;
     cursor: pointer;
