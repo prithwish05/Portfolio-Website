@@ -1,12 +1,5 @@
 /*
  
- [Master Stylesheet]
-
- Project:   VirtualGram Template
- Version:   1.0
- Author:    Mikhail Abdillah
- Website:   https://www.macode.web.id/
-
  [Table of contents]
 
  1. Basic
@@ -257,16 +250,100 @@ a:hover, a:active {
     z-index: 99;
 }
 
-/* Template Config */
-.config {
+/* btn-link-tree */
+.btn-link-tree {
     position: fixed;
-    top: 50%;
-    right: -282px;
-    padding: 5px;
-    background-color: transparent;
+    bottom: 10px;
+    left: 14%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: #52565c;
+    color: #fff;
+    visibility: hidden;
+    cursor: pointer;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.4);
+    z-index: 99;
+}
+
+/* Template Config */
+.linktree {
+    position: fixed;
+    top: 93%;
+    left: 0;
+    /* padding: 5px; */
+    /* background-color: transparent; */
     transition: right .3s ease;
     z-index: 100;
+    /* position: relative; */
+    display: block;
+    float: left;
+    margin: 0 !important;
+    padding: 5px;
+    background-color: #00000096;
+    border-radius: 122px 0 115px;
+    box-shadow: -3px 2px 9px rgba(50, 50, 50, 0.2);
 }
+
+
+.text-blue {
+    color: rgb(0, 200, 255);
+  }
+  
+  .text-white {
+    color: rgb(255, 255, 255);
+  }
+
+  .text-red {
+    color: rgb(255, 0, 0);
+  }
+
+  .typing-animation {
+    /* display: inline-block; */
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid orange; /* Simulates the cursor */
+    width: 0; /* Start with 0 width */
+    visibility: hidden; /* Hide text until animation starts */
+  }
+  
+  .typing-0.animate {
+    visibility: visible;
+    animation: typing 3s steps(30, end) forwards, blink-caret .75s step-end infinite;
+    animation-delay: 0.5s; /* Add delay for typing-1 */
+  }
+
+  .typing-1.animate {
+    visibility: visible;
+    animation: typing 3s steps(30, end) forwards, blink-caret .75s step-end infinite;
+    animation-delay: 4s; /* Add delay for typing-1 */
+  }
+  
+  .typing-2.animate {
+    visibility: visible;
+    animation: typing 3s steps(30, end) forwards, blink-caret .75s step-end infinite;
+    animation-delay: 5.5s; /* Starts after typing-1 finishes */
+  }
+  
+  .typing-3.animate {
+    visibility: visible;
+    animation: typing 3s steps(30, end) forwards, blink-caret .75s step-end infinite;
+    animation-delay: 7.5s; /* Starts after typing-2 finishes */
+  }
+
+  @keyframes typing {
+    from { width: 0; } /* Start with 0 width */
+    to { width: 100%; } /* Expand to full width */
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+  }
+  
 
 .config.active {
     right: 0;
@@ -279,7 +356,7 @@ a:hover, a:active {
     margin: 0 !important;
     padding: 5px;
     background-color: #fff;
-    border-radius: 12px 0 0 12px;
+    border-radius: 122px 0 115px;
     box-shadow: -3px 2px 9px rgba(50, 50, 50, 0.2);
 }
 
@@ -481,10 +558,20 @@ a:hover, a:active {
     border-radius: 30px;
 }
 
-.progress-bar {
+/* .progress-bar {
     font-size: 12px;
     background-color: #747474;
-}
+} */
+
+.progress-bar {
+    width: 0%; /* Start with width 0% */
+    transition: width 2s ease-in-out; /* Transition effect */
+    font-size: 12px;
+    /* background-color: #7dc3dd; */
+    background-color: #282dc996;
+  }
+
+  
 
 /* 
     5. Preloader
@@ -1126,8 +1213,8 @@ a:hover, a:active {
 }
 
 .theme-red .btn-theme {
-    background-color: #EF3724;
-    color: #fff;
+    background-color: #03c9ff;
+    color: #000000;
 }
 
 .theme-red .btn-theme:hover {
@@ -1141,7 +1228,7 @@ a:hover, a:active {
 
 .theme-red .btn-theme-outline {
     color: #ef3824;
-    box-shadow: 0 0 0 2px #EF3724;
+    box-shadow: 0 0 0 2px #000000;
 }
 
 .theme-red .btn-theme-outline:hover {
@@ -1166,15 +1253,16 @@ a:hover, a:active {
 }
 
 .theme-red .progress {
-    box-shadow: 0 0 0 2px #EF3724;
+    box-shadow: 0 0 0 2px #000000;
 }
 
-.theme-red .progress-bar {
+/* .theme-red .progress-bar {
     background-color: #EF3724;
-}
+} */
 
 .theme-red .theme-list li::before {
-    border-color: #EF3724;
+    border-color: #0026ff;
+
 }
 
 
